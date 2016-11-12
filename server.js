@@ -79,7 +79,7 @@ return htmltemplate;
 }
 
 app.get('/', function (req, res) {
-  res.send(createtemplate(articleone));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/:articlename', function (req, res) {
