@@ -42,7 +42,7 @@ var articles = {
     },
 };
 
-function createtemplate(data){
+function createtempelate(data){
 var title = data.title;
 var date =data.date;
 var heading=data.heading;
@@ -87,7 +87,7 @@ app.get('/:articlename', function (req, res) {
     //articlename == articleone
     //articles[articalname] == content objects for articleone
     var articlename = req.params.articlename;
-  res.send(createtemplate(articles[articlename]));
+  res.send(createtempelate(articles[articlename]));
 });
 
 
