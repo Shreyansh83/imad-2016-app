@@ -29,7 +29,7 @@ var articles = {
     content:`
     <p>
                 This is content of second article.
-            </p>`
+    </p>`
     },
     'article-three': {
     title:'Article-3',
@@ -38,8 +38,7 @@ var articles = {
     content:`
     <p>
                 This is content of third article.
-            </p>`
-            
+    </p>`
     },
 };
 
@@ -48,6 +47,7 @@ var title = data.title;
 var date =data.date;
 var heading=data.heading;
 var content = data.content;
+
 var htmltampelate = `
 <html>
     <head>
@@ -74,8 +74,9 @@ var htmltampelate = `
         </div>
         </div>
     </body>
-</html>`;
-return htmltemplate;
+</html>
+`;
+return htmltempelate;
 }
 
 app.get('/', function (req, res) {
